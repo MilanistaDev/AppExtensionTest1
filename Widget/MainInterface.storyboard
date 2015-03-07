@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odg-wa-ETG">
+                                <rect key="frame" x="50" y="34" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mE0-RP-IIc">
+                                <rect key="frame" x="212" y="5" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ktz-Xu-FP6">
+                                <rect key="frame" x="212" y="95" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gft-EC-dzW">
+                                <rect key="frame" x="212" y="185" width="80" height="80"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElL-LP-7qm">
+                                <rect key="frame" x="50" y="214" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJs-ke-AA0">
+                                <rect key="frame" x="50" y="124" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8b-yw-f0r">
+                                <rect key="frame" x="121" y="270" width="78" height="30"/>
+                                <state key="normal" title="more info...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="action:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="yBC-Be-Dgz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ElL-LP-7qm" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="Mee-MW-z6H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gft-EC-dzW" secondAttribute="trailing" constant="10" id="UgJ-8L-mg1"/>
+                            <constraint firstItem="mJs-ke-AA0" firstAttribute="top" secondItem="odg-wa-ETG" secondAttribute="bottom" constant="70" id="Urm-dc-zPA"/>
+                            <constraint firstItem="ElL-LP-7qm" firstAttribute="top" secondItem="mJs-ke-AA0" secondAttribute="bottom" constant="70" id="YXa-6r-QuT"/>
+                            <constraint firstItem="mJs-ke-AA0" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="ZjR-nj-dmg"/>
+                            <constraint firstItem="odg-wa-ETG" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="40" id="aHc-aN-rFi"/>
+                            <constraint firstItem="odg-wa-ETG" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="ako-uQ-97w"/>
+                            <constraint firstItem="ktz-Xu-FP6" firstAttribute="top" secondItem="mE0-RP-IIc" secondAttribute="bottom" constant="10" id="brk-nY-ody"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mE0-RP-IIc" secondAttribute="trailing" constant="10" id="cvW-zw-CXu"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="G8b-yw-f0r" secondAttribute="bottom" id="kIj-dE-dlT"/>
+                            <constraint firstItem="mE0-RP-IIc" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="5" id="lp8-RX-whE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ktz-Xu-FP6" secondAttribute="trailing" constant="10" id="q5O-In-2YH"/>
+                            <constraint firstAttribute="centerX" secondItem="G8b-yw-f0r" secondAttribute="centerX" id="yTY-sb-lya"/>
+                            <constraint firstItem="Gft-EC-dzW" firstAttribute="top" secondItem="ktz-Xu-FP6" secondAttribute="bottom" constant="10" id="yhj-VY-54C"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="image1" destination="mE0-RP-IIc" id="dlx-Sh-anb"/>
+                        <outlet property="image2" destination="ktz-Xu-FP6" id="QbW-TU-EJL"/>
+                        <outlet property="image3" destination="Gft-EC-dzW" id="NEN-CK-0YL"/>
+                        <outlet property="label1" destination="odg-wa-ETG" id="Jg9-ev-2q0"/>
+                        <outlet property="label2" destination="mJs-ke-AA0" id="Hjm-dj-RaT"/>
+                        <outlet property="label3" destination="ElL-LP-7qm" id="dBN-tf-Tyh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="285"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
